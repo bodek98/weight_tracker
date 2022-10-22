@@ -1,0 +1,22 @@
+.header {
+  background-color: chartreuse;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.container {
+  font-size: 2rem;
+  height: 80vh;
+  width: 90vw;
+  align-self: flex-start;
+  background-color: aqua;
+  border: solid;
+  display: flex;
+}
+
+.container__nav {
+  background-color: aquamarine;
+  border: solid;
+}/*# sourceMappingURL=style.css.map */
