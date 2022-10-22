@@ -1,11 +1,11 @@
 <template>
     <div class="box">
-        <h3 class="box__h3">Add Weight</h3>
-        <p class="box__p">Enter yourt weight</p>
-        <input class="box__input--left" type="text" placeholder="wprowadź wagę">
-        <input class="box__input--left" type="text" placeholder="wprowadź wagę">
-        <input class="box__input--left" type="text" placeholder="wprowadź wagę">
-        <input class="box__input--left" type="text" placeholder="wprowadź wagę">
+        <h3 class="box__h3">Add Calories</h3>
+        <p class="box__p">Write here what you eat</p>
+        <input class="box__input box__input--calories" type="text" placeholder="Title">
+        <input class="box__input box__input--calories" type="date" placeholder="Date">
+        <input class="box__input box__input--calories" type="text" placeholder="Calories per g/ml">
+        <input class="box__input box__input--calories" type="text" placeholder="Amount (g/ml)">
         <button class="box__button">ADD</button>
     </div>
 </template>
