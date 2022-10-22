@@ -1,0 +1,15 @@
+.box--weight {
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.26);
+  width: 25rem;
+  height: 15rem;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.box--weight input {
+  background-color: red;
+  height: 1rem;
+}/*# sourceMappingURL=style.css.map */

@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #2c3e50;
+  background-color: rgb(253, 253, 253);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
