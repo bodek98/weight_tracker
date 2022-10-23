@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-color: #c0c0c0;
+  background-color: #f1f1f1;
+  color: #2c3e50;
 }
 #app {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -8,10 +9,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #c0c0c0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
 }
 .header {
   font-size: 2rem;

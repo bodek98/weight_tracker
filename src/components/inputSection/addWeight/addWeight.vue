@@ -1,12 +1,10 @@
 <template>
-    <div class="box">
-        <h3 class="box__h3">Add Calories</h3>
-        <p class="box__p">Write here what you eat</p>
-        <input class="box__input box__input--calories" type="text" placeholder="Title">
-        <input class="box__input box__input--calories" type="date" placeholder="Date">
-        <input class="box__input box__input--calories" type="text" placeholder="Calories per g/ml">
-        <input class="box__input box__input--calories" type="text" placeholder="Amount (g/ml)">
-        <button class="box__button">ADD</button>
+    <div class="input_box">
+        <h3 class="input_box__h3">Add Weight</h3>
+        <p class="input_box__p">Enter your weight</p>
+        <input class="input_box__input input_box__input--weight" type="text" placeholder="Enter your weight">
+        <input class="input_box__input input_box__input--weight" type="date" placeholder="Date">
+        <button class="input_box__button">ADD</button>
     </div>
 </template>
 

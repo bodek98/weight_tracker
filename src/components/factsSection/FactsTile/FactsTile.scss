@@ -1,0 +1,44 @@
+.facts_box {
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.26);
+  border-radius: 0.3rem;
+  width: 19vw;
+  min-height: 150px;
+  height: auto;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  word-break: break-word;
+}
+@media (max-width: 500px) {
+  .facts_box {
+    width: 90vw;
+  }
+} 
+.facts_box__h3 {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+.facts_box__p {
+  font-size: 1.25rem;
+  width: 90%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.facts_box__button {
+    font-size: 1.1rem;
+    height: 2rem;
+    width: 90%;
+    margin: 10px;
+    align-self: flex-end;
+    border-radius: 1rem;
+    background-color: #fff;
+    color: inherit;
+    border: none;
+    box-shadow: inherit;
+    cursor: pointer;
+}
+.facts_box__button:hover {
+  background-color: #eee;
+}
