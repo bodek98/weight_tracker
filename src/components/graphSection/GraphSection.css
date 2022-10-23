@@ -1,0 +1,15 @@
+.graph {
+  font-size: 2rem;
+  width: 95vw;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.graph__h2 {
+  width: 65vw;
+  margin: 0;
+  border-top: 2px solid;
+  margin-top: 2rem;
+}/*# sourceMappingURL=GraphSection.css.map */
