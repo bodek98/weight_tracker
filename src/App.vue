@@ -3,21 +3,34 @@
     <p class="header__p">Welcome to WeightTracker</p>
   </header>
   <InputSection />
-  <FactsSection />
+  <GraphSection v-if="isHidden"/>
+  <FactsSection  @onClickedShowGraph="showGraph" />
 </template>
 
 <script>
 import InputSection from "./components/inputSection/InputSection.vue";
 import FactsSection from "./components/factsSection/FactsSection.vue";
+import GraphSection from "./components/graphSection/GraphSection.vue";
 
 export default {
   components: {
     InputSection,
-    FactsSection
+    FactsSection,
+    GraphSection,
 },
   props: {
     msg: String,
   },
+  data() {
+    return {
+      isHidden: false
+    }
+  },
+  methods: {
+    showGraph() {
+      this.isHidden = !this.isHidden;
+    }
+  }
 };
 </script>
 

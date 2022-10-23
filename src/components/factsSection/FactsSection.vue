@@ -2,11 +2,8 @@
   <div class="facts">
     <h2 class="facts__h2">Facts</h2>
     <FactsTile title="Monthly weight"  bgColor="#fff" />
-    <FactsTile title="To the goal"  bgColor="#6BDF4B" />
-    <FactsTile title="BMI"  bgColor="#FF0F0F" content="2134" />
-    <FactsTile title="Your weight graph" buttonSubmit />
-    <FactsTile title="BMI" />
-    <FactsTile title="BMI" />
+    <FactsTile title="Your weight graph" buttonSubmit @clickedShowGraph="onClickedSG" />
+    <FactsTile title="BMI"  bgColor="#FF0F0F" content="wleo" />
   </div>
 </template>
 
@@ -23,6 +20,11 @@ export default {
   data() {
     return {
       
+    }
+  },
+  methods: {
+    onClickedSG() {
+      this.$emit('onClickedShowGraph', this.isHidden);
     }
   }
 };
