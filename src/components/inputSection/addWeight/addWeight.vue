@@ -12,4 +12,4 @@
 
 <script></script>
 
-<style src="./style.css"></style>
+<style src="./addWeight.css"></style>
