@@ -1,0 +1,39 @@
+.container {
+    font-size: 2rem;
+    width: 95vw;
+    display: flex;
+    height: 300px;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: red solid;
+  }
+  .box {
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.26);
+    border-radius: 0.3rem;
+    width: 30vw;
+    min-height: 250px;
+    height: auto;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    word-break: break-word;
+  }
+  .box__h3 {
+    margin: 0.5rem;
+    font-size: 2rem;
+  }
+  .box__p {
+    font-size: 1.25rem;
+    width: 90%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 500px) {
+    .box {
+      width: 90vw;
+    }
+  } 
