@@ -1,10 +1,10 @@
 <template>
   <header class="header">
-    <p class="header__p">Welcome to WeightTracker</p>
+    <p class="header__p">WeightTracker</p>
   </header>
-  <InputSection />
-  <GraphSection v-if="isHidden"/>
-  <FactsSection  @onClickedShowGraph="showGraph" />
+  <InputSection @getBmi="pushBmi" @getHistory="pushHistory" />
+  <FactsSection @onClickedShowGraph="showGraph" :bmi="bmiLocal" :weight="historyLocal.weight" />
+  <GraphSection v-show="isHidden" :history="historyLocal" />
 </template>
 
 <script>
@@ -23,12 +23,21 @@ export default {
   },
   data() {
     return {
-      isHidden: false
+      isHidden: false,
+      bmiLocal: 0,
+      historyLocal: {}
     }
   },
   methods: {
     showGraph() {
       this.isHidden = !this.isHidden;
+    },
+    pushBmi(value) {
+      this.bmiLocal = value;
+      console.log(this.bmiLocal)
+    },
+    pushHistory(value) {
+      this.historyLocal = value;
     }
   }
 };

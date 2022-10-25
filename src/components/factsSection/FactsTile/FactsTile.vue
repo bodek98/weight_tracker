@@ -12,13 +12,12 @@ export default {
   props: {
     title: String,
     bgColor: String,
-    content: String,
+    content: Number,
     buttonSubmit: Boolean,
     hidden: Boolean
   },
   data() {
     return {
-      isHidden: this.hidden
     }
   },
   methods: {

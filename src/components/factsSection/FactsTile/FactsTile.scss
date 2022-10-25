@@ -11,7 +11,7 @@
   justify-content: space-around;
   word-break: break-word;
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .facts_box {
     width: 90vw;
   }
@@ -22,6 +22,7 @@
 }
 .facts_box__p {
   font-size: 1.25rem;
+  text-align: center;
   width: 90%;
   margin: 0;
   margin-bottom: 10px;
@@ -31,14 +32,16 @@
     height: 2rem;
     width: 90%;
     margin: 10px;
-    align-self: flex-end;
+    // align-self: flex-end;
     border-radius: 1rem;
     background-color: #fff;
     color: inherit;
     border: none;
     box-shadow: inherit;
     cursor: pointer;
+    transition: background-color 0.5s;
 }
 .facts_box__button:hover {
   background-color: #eee;
+
 }

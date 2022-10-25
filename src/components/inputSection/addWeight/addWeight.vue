@@ -8,38 +8,49 @@
       step="0.1"
       placeholder="Enter your weight (kg)"
       v-model="inputWeight"
+      @keydown.enter="addData"
     />
     <input
       class="input_box__input input_box__input--weight"
       type="number"
       placeholder="Enter your height (cm)"
       v-model="inputHeight"
+      @keydown.enter="addData"
     />
-    <button @click="addData"  class="input_box__button">ADD</button>
+    <button @click="addData" class="input_box__button">ADD</button>
   </div>
 </template>
 
 <script>
-
 export default {
+  props: {},
   data() {
     return {
-        datas: [{
-            weight: 0,
-            height: 0,
-        }],
-        inputWeight: '',
-        inputHeight: '',
+      historyData: {},
+      bmi: 0,
+      inputWeight: null,
+      inputHeight: null,
     };
   },
   methods: {
     addData() {
-        this.datas.weight.push(this.inputWeight);
-        this.datas.height.push(this.inputHeight);
-        this.inputWeight = '';
-        this.inputHeight = '';
+      if (this.inputHeight !== "" && this.inputWeight !== "") {
+        this.historyData = {
+          weight: this.inputWeight,
+          height: this.inputHeight,
+        };
+        this.bmi = this.inputWeight / Math.pow(this.inputHeight / 100, 2);
+        this.$emit("bmiDataSender", this.bmi);
+        this.$emit("historyDataSender", this.historyData);
+        console.log(this.historyData);
+        this.inputWeight = "";
+        this.inputHeight = "";
+      } else {
+        alert("Please enter both data!");
+      }
+      // ADD BELOW 0
     },
-  }
+  },
 };
 </script>
 

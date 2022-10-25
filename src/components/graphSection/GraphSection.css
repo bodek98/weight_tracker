@@ -1,15 +1,29 @@
 .graph {
   font-size: 2rem;
-  width: 95vw;
+  width: 65vw;
   display: flex;
-  height: 300px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .graph__h2 {
   width: 65vw;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
   margin: 0;
   border-top: 2px solid;
   margin-top: 2rem;
+}
+
+.graph__ul {
+  width: 65vw;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.graph__li {
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding-inline: 0.5rem;
 }/*# sourceMappingURL=GraphSection.css.map */
