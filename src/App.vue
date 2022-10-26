@@ -3,7 +3,11 @@
     <h2 class="header__p">WeightTracker</h2>
   </header>
   <InputSection @getBmi="pushBmi" @getHistory="pushHistory" />
-  <FactsSection @onClickedShowGraph="showGraph" :bmi="bmiLocal" :weight="historyLocal.weight" />
+  <FactsSection
+    @onClickedShowGraph="showGraph"
+    :bmi="bmiLocal"
+    :weight="historyLocal.weight"
+  />
   <Transition>
     <GraphSection v-show="isHidden" :history="historyLocal" :bmi="bmiLocal" />
   </Transition>
@@ -19,7 +23,7 @@ export default {
     InputSection,
     FactsSection,
     GraphSection,
-},
+  },
   props: {
     msg: String,
   },
@@ -27,8 +31,8 @@ export default {
     return {
       isHidden: false,
       bmiLocal: 0,
-      historyLocal: {}
-    }
+      historyLocal: {},
+    };
   },
   methods: {
     showGraph() {
@@ -36,12 +40,12 @@ export default {
     },
     pushBmi(value) {
       this.bmiLocal = value;
-      console.log(this.bmiLocal)
+      console.log(this.bmiLocal);
     },
     pushHistory(value) {
       this.historyLocal = value;
-    }
-  }
+    },
+  },
 };
 </script>
 
