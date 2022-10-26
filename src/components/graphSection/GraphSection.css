@@ -6,6 +6,16 @@
   flex-wrap: wrap;
 }
 
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
 .graph__h2 {
   width: 65vw;
   -webkit-margin-after: 0;
@@ -18,12 +28,13 @@
 .graph__ul {
   width: 65vw;
   margin: 0;
-  list-style: none;
+  list-style: decimal;
   padding: 0;
 }
 
 .graph__li {
   border-radius: 1rem;
+  background-color: #fff;
   margin: 0.5rem;
   padding-inline: 0.5rem;
 }/*# sourceMappingURL=GraphSection.css.map */

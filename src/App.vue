@@ -1,10 +1,12 @@
 <template>
   <header class="header">
-    <p class="header__p">WeightTracker</p>
+    <h2 class="header__p">WeightTracker</h2>
   </header>
   <InputSection @getBmi="pushBmi" @getHistory="pushHistory" />
   <FactsSection @onClickedShowGraph="showGraph" :bmi="bmiLocal" :weight="historyLocal.weight" />
-  <GraphSection v-show="isHidden" :history="historyLocal" />
+  <Transition>
+    <GraphSection v-show="isHidden" :history="historyLocal" :bmi="bmiLocal" />
+  </Transition>
 </template>
 
 <script>
