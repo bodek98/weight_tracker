@@ -1,23 +1,30 @@
-# weight_tracker
+# Weight Tracker
 
-## Project setup
+## Description
 ```
-npm install
-```
+Weight tracker app made with VueJS.
+User can track his weight by adding it in input section.
+User have to add his height too.
+The Program will calculate user's BMI and show if it is within the standards.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
 ```
 
-### Lints and fixes files
+### Build With
 ```
-npm run lint
+Vue
+```
+
+### Features
+```
+Adding weights and heights
+BMI calculation
+BMI standards
+
+```
+
+### Screenshots
+```
+
 ```
 
 ### Customize configuration
