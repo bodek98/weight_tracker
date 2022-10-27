@@ -8,7 +8,8 @@
 
 .facts__h2 {
   width: 65vw;
+  font-weight: 300 !important;
   margin: 0;
-  border-top: 2px solid;
+  border-top: 1px solid;
   margin-top: 2rem;
 }/*# sourceMappingURL=FactsSection.css.map */

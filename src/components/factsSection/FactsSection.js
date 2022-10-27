@@ -26,7 +26,7 @@ export default {
   updated() {
     // this.bmiFontColor = "inherit";
     if (this.bmi < 18.5) {
-      this.bmiCol = "#0E83FF";
+      this.bmiCol = "var(--blue)";
       this.bmiFontColor = '#fff';
     } else if (this.bmi >= 18.5 && this.bmi < 25) {
       this.bmiCol = "#25FF07";
@@ -36,7 +36,7 @@ export default {
       this.bmiFontColor = 'inherit'
     } else if (this.bmi >= 29) {
       this.bmiCol = "#FF0C00";
-      this.bmiFontColor = "#85FFFF";
+      this.bmiFontColor = "#FFF";
     }
   },
 };

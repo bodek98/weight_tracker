@@ -1,7 +1,7 @@
 .facts_box {
   background-color: #fff;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.26);
-  border-radius: 0.3rem;
+  border-radius: 2rem;
   width: 19vw;
   min-height: 150px;
   height: auto;
@@ -9,6 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start;
   word-break: break-word;
 }
 
@@ -19,10 +20,17 @@
 }
 .facts_box__h3 {
   margin: 0.5rem;
+  width: 100%;
+  text-align: center;
   font-size: 1.2rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .facts_box__p {
+  font-weight: 400;
+  padding: 1rem 2rem;
   font-size: 2rem;
   text-align: center;
   width: 90%;
@@ -31,19 +39,18 @@
 }
 
 .facts_box__button {
-  font-size: 1.1rem;
-  height: 2rem;
-  width: 90%;
-  margin: 10px;
-  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
   background-color: #fff;
   color: inherit;
   border: none;
   box-shadow: inherit;
   cursor: pointer;
-  transition: background-color 0.5s;
+  transition: background-color ease-in-out 0.2s, ease-in-out color 0.2s;
 }
 
 .facts_box__button:hover {
-  background-color: #eee;
+  background-color: var(--blue);
+  color: #fff;
 }/*# sourceMappingURL=FactsTile.css.map */

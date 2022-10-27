@@ -1,15 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+:root {
+  --blue: #0e83ff;
+}
+
 body {
   margin: 0;
-  background: linear-gradient(110deg, #51d0de 60%, #ffed4b 60%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(141deg, rgb(255, 255, 255) 64%, rgb(208, 234, 251) 100%);
   background-attachment: fixed;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  color: #bf4aa8;
   min-height: 100vh;
 }
 
 #app {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lato", sans-serif;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -19,11 +22,16 @@ body {
 }
 
 .header {
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: 100%;
   text-align: center;
   align-self: flex-start;
   margin-bottom: 10px;
+  background-color: var(--blue);
+  box-shadow: rgba(11, 101, 197, 0.3490196078) 0px 5px 15px;
+  color: #fff;
+  margin-bottom: 4rem;
+  padding: 1rem;
 }
 
 .header__p {
