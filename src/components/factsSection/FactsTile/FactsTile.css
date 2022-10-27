@@ -13,11 +13,6 @@
   word-break: break-word;
 }
 
-@media (max-width: 400px) {
-  .facts_box {
-    width: 90vw;
-  }
-}
 .facts_box__h3 {
   margin: 0.5rem;
   width: 100%;
@@ -40,7 +35,8 @@
 
 .facts_box__button {
   font-size: 2rem;
-  padding: 1rem 2rem;
+  width: 80%;
+  height: 40%;
   border-radius: 2rem;
   background-color: #fff;
   color: inherit;
@@ -53,4 +49,10 @@
 .facts_box__button:hover {
   background-color: var(--blue);
   color: #fff;
+}
+
+@media (max-width: 650px) {
+  .facts_box {
+    width: 90vw;
+  }
 }/*# sourceMappingURL=FactsTile.css.map */

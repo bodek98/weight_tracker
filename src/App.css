@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background: rgb(255, 255, 255);
+  background: #fff;
   background: linear-gradient(141deg, rgb(255, 255, 255) 64%, rgb(208, 234, 251) 100%);
   background-attachment: fixed;
   min-height: 100vh;
@@ -22,6 +22,7 @@ body {
 }
 
 .header {
+  position: fixed;
   font-size: 1.8rem;
   width: 100%;
   text-align: center;
@@ -30,7 +31,6 @@ body {
   background-color: var(--blue);
   box-shadow: rgba(11, 101, 197, 0.3490196078) 0px 5px 15px;
   color: #fff;
-  margin-bottom: 4rem;
   padding: 1rem;
 }
 

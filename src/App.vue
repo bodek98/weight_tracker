@@ -40,7 +40,6 @@ export default {
     },
     pushBmi(value) {
       this.bmiLocal = value;
-      console.log(this.bmiLocal);
     },
     pushHistory(value) {
       this.historyLocal = value;

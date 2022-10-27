@@ -18,7 +18,6 @@ export default {
         this.bmi = this.inputWeight / Math.pow(this.inputHeight / 100, 2);
         this.$emit("bmiDataSender", this.bmi);
         this.$emit("historyDataSender", this.historyData);
-        console.log(this.historyData);
         this.inputWeight = "";
         this.inputHeight = "";
       } else {

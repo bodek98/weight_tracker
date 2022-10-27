@@ -12,11 +12,6 @@
   align-items: flex-start;
   word-break: break-word;
 }
-@media (max-width: 400px) {
-  .facts_box {
-    width: 90vw;
-  }
-} 
 .facts_box__h3 {
   margin: 0.5rem;
   width: 100%;
@@ -34,17 +29,23 @@
   margin-bottom: 10px;
 }
 .facts_box__button {
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    background-color: #fff;
-    color: inherit;
-    border: none;
-    box-shadow: inherit;
-    cursor: pointer;
-    transition: background-color ease-in-out 0.2s, ease-in-out color 0.2s;
+  font-size: 2rem;
+  width: 80%;
+  height: 40%;
+  border-radius: 2rem;
+  background-color: #fff;
+  color: inherit;
+  border: none;
+  box-shadow: inherit;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.2s, ease-in-out color 0.2s;
 }
 .facts_box__button:hover {
   background-color: var(--blue);
   color: #fff;
+}
+@media (max-width: 650px) {
+  .facts_box {
+    width: 90vw;
+  }
 }

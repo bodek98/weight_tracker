@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
 
 :root {
   --blue: #0e83ff;
@@ -6,13 +6,17 @@
 
 body {
   margin: 0;
-  background: rgb(255,255,255);
-  background: linear-gradient(141deg, rgba(255,255,255,1) 64%, rgba(208,234,251,1) 100%);
+  background: #fff;
+  background: linear-gradient(
+    141deg,
+    rgba(255, 255, 255, 1) 64%,
+    rgba(208, 234, 251, 1) 100%
+  );
   background-attachment: fixed;
   min-height: 100vh;
 }
 #app {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +25,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .header {
+  position: fixed;
   font-size: 1.8rem;
   width: 100%;
   text-align: center;
@@ -29,8 +34,8 @@ body {
   background-color: var(--blue);
   box-shadow: #0b65c559 0px 5px 15px;
   color: #fff;
-  margin-bottom: 4rem;
   padding: 1rem;
+
 }
 .header__p {
   margin: 0;

@@ -5,11 +5,11 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-top: 150px;
 }
 .input_box {
   background-color: #fff;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.26);
-  // box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 2rem;
   width: 40vw;
   min-height: 250px;
@@ -39,7 +39,7 @@
   color: inherit;
   box-shadow: inherit;
   border: none;
-  padding-inline: 0.5rem;
+  padding-inline-start: 0.5rem;
 }
 .input_box__input:hover {
   opacity: 0.8;
@@ -47,7 +47,7 @@
 .input_box__button {
   font-size: 1.1rem;
   height: 2rem;
-  width: 95%;
+  width: 85%;
   margin: 10px;
   align-self: flex-end;
   border-radius: 1rem;
@@ -56,13 +56,13 @@
   border: none;
   box-shadow: inherit;
   cursor: pointer;
-  transition: background-color 0.5s;
+  transition: background-color ease-in-out 0.2s, ease-in-out color 0.2s;
 }
 .input_box__button:hover {
-  
-  background-color: #ddd;
+  background-color: var(--blue);
+  color: #fff;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .input_box {
     width: 90vw;
   }

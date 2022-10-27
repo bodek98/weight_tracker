@@ -27,13 +27,13 @@ export default {
     // this.bmiFontColor = "inherit";
     if (this.bmi < 18.5) {
       this.bmiCol = "var(--blue)";
-      this.bmiFontColor = '#fff';
+      this.bmiFontColor = "#fff";
     } else if (this.bmi >= 18.5 && this.bmi < 25) {
       this.bmiCol = "#25FF07";
-      this.bmiFontColor = 'inherit';
+      this.bmiFontColor = "inherit";
     } else if (this.bmi >= 25 && this.bmi < 30) {
       this.bmiCol = "#FFCB0E";
-      this.bmiFontColor = 'inherit'
+      this.bmiFontColor = "inherit";
     } else if (this.bmi >= 29) {
       this.bmiCol = "#FF0C00";
       this.bmiFontColor = "#FFF";
