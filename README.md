@@ -10,7 +10,7 @@ Program will also show your weight history.
 
 ```
 
-### 📺 Screenshots
+### 📸 Screenshots
 
 ![image](https://user-images.githubusercontent.com/94081512/199277656-6bde54f5-3f18-4f19-b22c-27ebb96da3cd.png)
 ![image](https://user-images.githubusercontent.com/94081512/199277922-0cbf4f27-15ca-4715-aa39-afa33f1b0989.png)
