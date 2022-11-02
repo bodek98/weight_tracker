@@ -7,7 +7,6 @@ User can track his weight by adding it in input section.
 User have to add his height too.
 The Program will calculate user's BMI and show if it is within the standards.
 Program will also show your weight history.
-
 ```
 
 ### 📸 Screenshots
@@ -23,7 +22,6 @@ Add your weight and height
 BMI calculation
 BMI standards (colors on BMI tile)
 Weight history
-
 ```
 
 
@@ -35,5 +33,4 @@ Technologies used in project:
 VueJS
 SCSS
 JavaScript
-
 ```
