@@ -21,7 +21,7 @@ Program will also show your weight history.
 Add your weight and height
 BMI calculation
 BMI standards (colors on BMI tile)
-Weight history
+Weight history with local storage
 ```
 
 
